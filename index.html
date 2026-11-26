@@ -14,7 +14,7 @@ import {createClient} from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2
 const SUPABASE_URL='https://https://zkhvecyxhgaunmczhaot.supabase.co';
 const SUPABASE_PUBLISHABLE_KEY='sb_publishable_oXldZtVynkrtjAj0uVbjbw_lngwdbbl;
 const msg=document.querySelector('#message'),authArea=document.querySelector('#authArea'),userArea=document.querySelector('#userArea'),form=document.querySelector('#authForm'),submit=document.querySelector('#submitAuth');
-let mode='signup';const ready=SUPABASE_PUBLISHABLE_KEY!=='TEMPEL_PUBLISHABLE_KEY_DI_SINI';const supabase=ready?createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY):null;
+let mode='signup'; const ready=SUPABASE_PUBLISHABLE_KEY!=='TEMPEL_PUBLISHABLE_KEY_DI_SINI';const supabase=ready?createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY):null;
 function say(t){msg.textContent=t;msg.classList.remove('hidden')}
 function setMode(m){mode=m;submit.textContent=m==='signup'?'Buat akun':'Masuk';document.querySelector('#showSignup').className=m==='signup'?'btn':'btn secondary';document.querySelector('#showLogin').className=m==='login'?'btn':'btn secondary';msg.classList.add('hidden')}
 document.querySelector('#showSignup').onclick=()=>setMode('signup');document.querySelector('#showLogin').onclick=()=>setMode('login');
