@@ -11,8 +11,8 @@
 <script type="module">
 import {createClient} from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm';
 // Ganti nilai ini dengan Project URL dan Publishable Key milikmu.
-const SUPABASE_URL='https://zkhvecyxhqaunmczhaot.supabase.co';
-const SUPABASE_PUBLISHABLE_KEY='TEMPEL_PUBLISHABLE_KEY_DI_SINI';
+const SUPABASE_URL='https://https://zkhvecyxhgaunmczhaot.supabase.co';
+const SUPABASE_PUBLISHABLE_KEY='sb_publishable_oXldZtVynkrtjAj0uVbjbw_lngwdbbl;
 const msg=document.querySelector('#message'),authArea=document.querySelector('#authArea'),userArea=document.querySelector('#userArea'),form=document.querySelector('#authForm'),submit=document.querySelector('#submitAuth');
 let mode='signup';const ready=SUPABASE_PUBLISHABLE_KEY!=='TEMPEL_PUBLISHABLE_KEY_DI_SINI';const supabase=ready?createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY):null;
 function say(t){msg.textContent=t;msg.classList.remove('hidden')}
